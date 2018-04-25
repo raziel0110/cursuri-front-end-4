@@ -9,6 +9,7 @@ var btn_add = document.getElementById('btn_add');
 
 //when click button to add
 btn_add.addEventListener('click', addToList);
+
 function addToList(){
     insertItem(item_title.value,item_details.value);
     item_title.value = "";
