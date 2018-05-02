@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="script_validation.js"></script> -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <div class="succefully clearfix hidden" id="succefully">
+        <img src="ok.png" class="float-left check">    
+        <p class="float-left"> Thank you for contacting us.<span id="name_succefully"></span>!  </p>
+        <img src="close2.png" class="close" id="close">
+    </div>
+
+
+
+    <div class="container clearfix">
+        <div class="forms float-left"> 
+            <form action="validation.html" method="GET" name="form" autocomplete="on" class="clearfix">
+                <input type="text" name="first_name" placeholder="First Name" autocomplete="first_name">
+                <br>
+                <input type="text" name="last_name" placeholder="Last Name" autocomplete="last_name">
+                <p>Gender</p>
+                <div id="radio">
+                <input type="radio" name="gender" value="Male">M<br>
+                <input type="radio" name="gender" value="Fenale">F
+                </div>
+                <br>
+                <textarea id = "comment" name="comment"  cols="30" rows="10" placeholder="Enter your message"></textarea>
+                <br>
+                <input type="submit" value="Submit" class="btn_submit float-right">
+            </form>
+        </div>
+        <aside class="float-left img-right">
+            <img src="#" alt="">
+        </aside>
+    </div>
+
+    
+    
+</body>
+</html>
