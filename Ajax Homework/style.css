@@ -69,3 +69,12 @@ h1 {
 .visible {
     visibility: visible;
 }
+article > p {
+  margin:1px auto;
+  
+}
+.buttons {
+    margin: 0 auto;
+  width:100px;
+  
+}

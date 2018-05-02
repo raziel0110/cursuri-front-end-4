@@ -20,8 +20,8 @@ function getJokes(){
                 var element = document.createElement('article');
                 var buttons = document.createElement('div');
                 element.setAttribute('article-id',item.id);
-                buttons.innerHTML = '<button data-edit-id="'+item.id +'">Edit</button> | <button data-delete-id="'+item.id+'">Delete</button>';
-                
+                buttons.innerHTML = '<button data-edit-id="'+item.id +'" class = "btn-type">Edit</button> | <button data-delete-id="'+item.id+'" class="btn-type">Delete</button>';
+                buttons.classList.add('buttons');
                 
                 element.classList.add('joke');
                 element.innerHTML = '<p><span>'+ (i+1) +'. </span>'+ item.joke +'</p>';
