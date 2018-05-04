@@ -72,7 +72,7 @@ $.ajax('https://jsonplaceholder.typicode.com/posts',{
         console.log("create new post",response);
     },
 
-    error : function()){
+    error : function(){
         alert('create post error');
     }
 });
