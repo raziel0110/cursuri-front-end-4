@@ -1,5 +1,7 @@
 function PostList(){
     this.items = [];
+
+    //this.item -> e o proprietate pe this si va fi accesata dinafara functiei,daca va fi o variabila va fi accesata doar in interierorul functiei
 }
 
 PostList.prototype.fetchData = function(){
@@ -16,9 +18,9 @@ PostList.prototype.fetchData = function(){
                 postModel.title = postItem.title;
                 postModel.body = postItem.body;
                 postModel.userId = postItem.userId;
-                that.items.push(postModel);
 
                 //push the model in the array
+                that.items.push(postModel);
             }
         },
         error : function(){
