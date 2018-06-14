@@ -1,0 +1,2 @@
+clasa noua- Comment
+clasa noua - commentList-> array gol
