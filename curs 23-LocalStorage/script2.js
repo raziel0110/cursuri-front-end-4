@@ -83,9 +83,10 @@ window.onload = ()=>{
                     //console.log(phone.quantity);
                     phone.quantity = 0;
                     nr_bucati.style.color = "red"; 
-                    localStorage.removeItem(phone); 
-
+                    phonesObj.slice(i,1);
+                    list.removeChild(article);
                 } 
+                localStorage.removeItem('phones'); 
                 nr_bucati.value = phone.quantity;
                 
 
