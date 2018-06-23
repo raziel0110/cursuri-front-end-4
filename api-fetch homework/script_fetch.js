@@ -31,6 +31,7 @@ function callOnSuccesJokes(response){
                 buttons.innerHTML = '<button data-edit-id="'+item.id +'" class="btn-type">Edit</button> | <button data-delete-id="'+item.id+'" class="btn-type">Delete</button>';
                 buttons.classList.add('buttons');
                 
+                
                 element.classList.add('joke');
                 element.innerHTML = '<p><span>'+ (i+1) +'. </span>'+ item.joke +'</p>';
                 element.appendChild(buttons);
@@ -40,13 +41,19 @@ function callOnSuccesJokes(response){
 
                 element.addEventListener('click',function(e){
                     console.log(this.lastChild); 
-                   var el = this.lastChild;
+                  
+                  var el = this.lastChild;
                    if(el.style.display === "none"){
                     el.style.display = "block";
-                   } else {
-                    el.style.display = "none";
-                    buttons.style.display = "none";
+                    
                    }
+//                   else {
+//                      buttons.style.display = "none";
+//                    }
+//                    } else {
+//                     el.style.display = "none";
+//                     buttons.style.display = "none";
+//                    }
                     
                 });
 
