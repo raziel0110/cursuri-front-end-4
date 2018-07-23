@@ -1,0 +1,77 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    color:#222;
+}
+
+.logo{
+    height: 50%;
+    width: 50%;
+}
+.navbar {
+    padding: .8rem;
+
+}
+
+.navbar-nav li{
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+.nav-item a {
+    color:#000;
+}
+
+
+
+.carousel-inner img{
+    width: 100%;
+    height:50%;
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+
+.welcome hr {
+    border-top : 2px solid #b4b4b4;
+    width: 65%;
+}
+.about {
+    font-family: cursive;
+    padding-top: 1rem;
+}
+.category img {
+    padding-bottom: 0.5rem;
+}
+.img-hobby{
+    max-width: 60%;
+}
+
+.list-group{
+    margin: 1rem auto;
+    width: 50%;
+}
+.contact{
+    padding-top:5rem;
+    padding-bottom: 3rem;
+}
+.contact hr{
+    border-top : 2px solid orangered;
+    width: 50%;
+    padding-bottom: 1rem;
+}
+.training{
+    width: 100%;
+}
+
+.training h3 {
+    font-size: 3rem;
+    padding: 1.2rem;
+}
+.contact-form{
+    margin-bottom : 0;
+}
