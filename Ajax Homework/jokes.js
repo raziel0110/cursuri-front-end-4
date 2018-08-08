@@ -46,11 +46,11 @@ function getJokes(){
     });
 }
 function getMyIp(){
-    $.ajax('https://api.ipdata.co',{
+    $.ajax('https://api.ipdata.co?api-key=f190d0fcea644bcdd95b969277ea64971a947e314e82a16eab06dd6a',{
         method:'GET',
         success : function(response){
             var post = document.getElementById('ip_post');
-            
+            console.log(response);
 
             post.innerHTML = '<p> Your Ip: '+ response.ip +'</p>'+
                             '<p>Your City : '+ response.city + ' </p>'+
